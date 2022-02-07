@@ -98,7 +98,7 @@ def show_text(text):
     game_Show()
 # function for crash to obstacles
 def crash():
-    pygame.mixer.music.stop()
+    #pygame.mixer.music.stop()
     pygame.mixer.Sound.play(Sound_Gameover)
     font = pygame.font.Font('freesansbold.ttf',50)
     Textsurface , TextRect = text_objects("!!! You Crashed !!!",font)
@@ -114,7 +114,7 @@ def crash():
         pygame.display.update()
 #function for show game
 def game_Show():  
-    pygame.mixer.music.play(-1)
+    #pygame.mixer.music.play(-1)
     # coordinate variable
     x = (display_width * 0.45)
     y = (display_height * 0.8)
